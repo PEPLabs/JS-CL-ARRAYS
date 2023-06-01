@@ -6,6 +6,7 @@
  * also become increasingly important in the JavaScript frameworks you'll be learning later. Those will be discussed
  * in a future activity.
  */
+
 let content = document.getElementById("content");
 let input = document.getElementById("input");
 let pushButton = document.getElementById("pushButton");
@@ -13,13 +14,14 @@ let popButton = document.getElementById("popButton");
 let length = document.getElementById("length");
 
 let arr = [];
+if(content !== null || length !== null){
+    content.innerText=arr;
+    length.innerText=0;
 
-content.innerText=arr;
-length.innerText=0;
 
 pushButton.onclick = updatePush;
 popButton.onclick = updatePop;
-
+}
 
 /**
  * on button click, grab the input value, have the arrPush function push the value to arr, and update the site
@@ -69,3 +71,9 @@ function arrLength(){
 
 
 /* OPTIONAL PRACTICE: If you want more practice later, try pushing various datatypes to arrays. */
+module.exports = {
+    arr: arr,
+    arrLength: arrLength,
+    arrPop: arrPop,
+    arrPush: arrPush
+}
