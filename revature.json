@@ -1,0 +1,30 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/SeleniumTest.java",
+      "testCases": [
+        {
+          "methodName": "testAdd",
+          "label": "Verify adding elements to array",
+          "description": "Adds multiple items to the array via input field and push button, then asserts that the array content matches the expected comma-separated string."
+        },
+        {
+          "methodName": "testPop",
+          "label": "Verify popping elements from array",
+          "description": "Adds multiple items to the array, then clicks the pop button and asserts that the last item is removed from the array content."
+        },
+        {
+          "methodName": "testLengthAfterAdd",
+          "label": "Verify array length after adding items",
+          "description": "Clicks the push button multiple times and checks that the length element reflects the correct number of items added."
+        },
+        {
+          "methodName": "testLengthAfterAddPop",
+          "label": "Verify array length after adding and popping items",
+          "description": "Adds multiple items and then pops one, asserting that the length element correctly shows the updated count."
+        }
+      ]
+    }
+  ]
+}
